@@ -236,6 +236,13 @@
         //$("products-cart").append(productHTML);
         $("#products-cart").append(productHTML);
       }
+      // Display empty cart message depending on number of items in the cart
+
+      if (CART.length == 0) {
+        $("#empty-cart").fadeIn();
+        } else {
+        $("#empty-cart").fadeOut();
+        }
   }
 
   function search() {
